@@ -28,6 +28,8 @@ class Player extends GameObject {
 	}
 
 	update(deltaTime) {
+		addScore(1);
+
 		// Update the players physics:
 		this.velocity.y += gravity.y * deltaTime;
 		this.capVelocity(20);
